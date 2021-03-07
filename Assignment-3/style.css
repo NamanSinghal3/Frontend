@@ -1,0 +1,43 @@
+.raise:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.raise {
+    --color: #51ebd7;
+    --hover: #e2ac6f;
+  }
+  button {
+    background: none;
+    border: 4.2px solid;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 1em 2em;
+    
+    cursor: pointer;
+ 
+  }
+
+  body {
+    color: #fff;
+    background: #1f221f80;
+    font: 300 1.35em "Courier New", monospace;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+  }
+  
+button {
+    color: var(--color);
+    transition: 0.62s;
+  }
+  button:hover, button:focus {
+    border-color: var(--hover);
+    color: var(--hover);
+  }
